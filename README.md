@@ -1,6 +1,9 @@
 #Execution:
 
 ### Java
+
+Please run only the files in the folder "edited" to make sure the ```reset.sh``` script works correctly.
+
 ```
 // Run jar
 java -jar spongebugs-runner-2.0.0.jar <file absolute path>
