@@ -13,6 +13,7 @@ java -jar spongebugs-runner-2.0.0.jar <file absolute path>
 bash reset.sh
 ```
 
+### Problems
 Other languages are not supported by the ```spongebugs-runner-2.0.0.jar``` file
 If you try to run them, the following error will be thrown:
 ```
