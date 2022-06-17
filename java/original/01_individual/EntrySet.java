@@ -22,7 +22,7 @@ public class EntrySet {
         if (map == null || map.isEmpty()) {
             return;
         }
-        for (String key : map.entrySet()) {
+        for (String key : map.keySet()) {
             Object value = map.get(key);
         }
     }
@@ -32,8 +32,8 @@ public class EntrySet {
         if (this.hashMap == null || this.hashMap.isEmpty()) {
             return;
         }
-        for (String key : this.hashMap.entrySet()) {
-            if (entry.getKey().equals(entry.getValue())) {
+        for (String key : this.hashMap.keySet()) {
+            if (key.equals(this.hashMap.get(key))) {
                 System.out.println("Equal.");
             }
         }
