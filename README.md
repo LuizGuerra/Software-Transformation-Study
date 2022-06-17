@@ -2,9 +2,15 @@
 
 ### Java
 ```
-    // Run jar
-    java -jar spongebugs-runner-2.0.0.jar /Users/luizpedrofranciscattoguerra/Lupe/foo/my_app/java/EditedMain.java
-    // Relative paths don't seem to work here, so you should use the absolute path
+// Run jar
+java -jar spongebugs-runner-2.0.0.jar <file absolute path>
+// Relative paths don't seem to work here, so you should use the absolute path
+```
+
+### To clear the jar execution to try again
+```
+// Go to the java folder
+bash reset.sh
 ```
 
 Other languages are not supported by the ```spongebugs-runner-2.0.0.jar``` file
