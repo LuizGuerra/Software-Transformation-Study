@@ -9,9 +9,7 @@ Edited="edited"
 # Declare an array of string of file semi relative paths
 declare -a StringArray=("01_individual/EntrySet.java" "01_individual/RepeatedStrings.java" "02_joint/FileWithTwoCodeSmells.java" "03_integrated/IntegratedCodeSmells.java")
 
-> "/Users/luizpedrofranciscattoguerra/Lupe/foo/my_app/java/edited/03_integrated/IntegratedCodeSmells.java"
-
-Iterate the string array using for loop
+# Iterate the string array using for loop
 for val in ${StringArray[@]}; do
     if test -f "$ScriptDirectory/$Edited/$val";
     then

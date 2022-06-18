@@ -18,7 +18,7 @@ public class FileWithTwoCodeSmells {
     // Initialize the hashmap
     private void configureState(String input) {
         for (Integer key = 0; key < 10; key++) {
-            hashMap.put(input + key, input + (10 - key));
+            hashMap.put(input + "foreachflag" + key, input + "foreachflag" + (10 - key));
         }
     }
 
@@ -31,7 +31,8 @@ public class FileWithTwoCodeSmells {
         // needed
         // https://rules.sonarsource.com/java/type/Code%20Smell/RSPEC-2864
         for (String key : map.entrySet()) {
-            Object value = map.get(key);
+            String value = map.get(key);
+            System.out.println("foreachflag" + " - " + value);
         }
     }
 
