@@ -1,3 +1,6 @@
+import java.util.Map;
+import java.util.HashMap;
+
 public class FileWithTwoCodeSmells {
     private Map<String, String> hashMap;
 
@@ -24,15 +27,15 @@ public class FileWithTwoCodeSmells {
 
     // Use the hashmap
     private void startExecution(String input, Map<String, String> map) {
-        if (this.hashMap == null || this.hashMap.isEmpty()) {
+        if (map == null || map.isEmpty()) {
             return;
         }
         // Code smell: "entrySet()" should be iterated when both the key and value are
         // needed
         // https://rules.sonarsource.com/java/type/Code%20Smell/RSPEC-2864
-        for (String key : map.entrySet()) {
+        for (String key : map.keySet()) {
             String value = map.get(key);
-            System.out.println("foreachflag" + " - " + value);
+            map.put(key, "foreachflag" + " - " + value);
         }
     }
 
