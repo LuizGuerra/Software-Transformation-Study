@@ -3,16 +3,26 @@
 ### Java
 
 Please run only the files in the folder "edited" to make sure the ```reset.sh``` script works correctly.
+⚠️ Also, note that relative paths doesn't seem to work here, so you should use absolute paths.
 
+#### Run a specific file with the ```jar```
 ```
-// Run jar
+// Go to the java folder
+cd java
 java -jar spongebugs-runner-2.0.0.jar <file absolute path>
-// Relative paths don't seem to work here, so you should use the absolute path
+```
+
+#### Run all files from a directory with the ```jar```
+```
+// Go to the java folder
+cd java
+java -jar spongebugs-runner-2.0.0.jar <folder absolute path>
 ```
 
 ### To clear the jar execution to try again
 ```
 // Go to the java folder
+cd java
 bash reset.sh
 ```
 
