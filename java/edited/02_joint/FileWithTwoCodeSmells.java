@@ -24,7 +24,7 @@ public class FileWithTwoCodeSmells {
 
     // Use the hashmap
     private void startExecution(String input, Map<String, String> map) {
-        if (this.hashMap == null || this.hashMap.isEmpty()) {
+        if (map == null || map.isEmpty()) {
             return;
         }
         // Code smell: "entrySet()" should be iterated when both the key and value are
